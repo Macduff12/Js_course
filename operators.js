@@ -22,10 +22,28 @@ if(true){
     console.log("inside else block")
 }
 
-function canDrinkAlcho(age){if(age< 18){
-    return "ти дуже маленький"
-}  else if (age> 100){
-    return " ти застарий, ще можеш померти";
-}else {
-    return "ти можеш все";
-}}
+function canDrinkAlcho(age){
+
+    //&&
+    // true && true => true
+    // false && true => false
+    // true && false => false
+    // false && false => false
+
+    //||
+    // true || true => true
+    // false || true => true
+    // true || false => true
+    // false || false => false
+
+    if(age <= 18 || (name == 'owner' || role =='admin') ){
+        return "ти small"
+    } if (age>= 100){
+        return " ти застарий, ще можеш померти";
+    } 
+        return "ти можеш все";
+}
+console.log(canDrinkAlcho)
+ 
+let role =  age>18 ? "QA" : "Student"
+console.log(role)
